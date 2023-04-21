@@ -1,6 +1,8 @@
 <template>
     <div class="card_div">
+      <i class="fa-solid fa-paw"></i>
       <div v-for="(category, index) in categories" :key="index" class="card" style="width: 20rem;">
+        
         <i style="font-size:30px; margin-top:15px;" :class="category.icon"></i>
       <div class="card-body">
         <h5 class="card-title">{{category.name}}</h5>
@@ -49,4 +51,8 @@
     flex-wrap: wrap;
     margin-left: 2rem;
   }
+  .card-title{
+    text-transform: uppercase;
+  }
+
   </style>
